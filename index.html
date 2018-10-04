@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="images/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="menu">
+          <ul>
+                <li> <a href="#">Home</a></li>
+                <li class='scrollBtn' target='#About'><a>About</a></li>
+                <li class='scrollBtn' target='#Education'> <a>Education</a></li>
+                <li class='scrollBtn' target='#Skills'> <a>Skills</a></li>
+                <li class='scrollBtn' target='#Portfolio'> <a>Portfolio</a></li>
+                <li class='scrollBtn' target='#Contact'> <a>Contact</a></li>
+          </ul>
+       </div>
+      </div>
+    
+      <header class="v-header contain">
+        <div class="fullscreen-video-wrap">
+           <video src="images/Typing_light_01_Videvo.mov82329.webm" muted="muted" autoplay="true" loop="true"  >
+        </video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content text-md-center">
+                  <h2>HI, I AM AZUKILE</h2>
+                <p>Junior Web Developer</p>
+        <p><h1>LET'S BUILD SOMETHING AMAZING TOGETHER </h1>  </p>
+                
+          
+        </div>
+      </header>
+    
+      <div class="header-content text-md-center padder" >
+          <section class="section section-a">
+              <div class="container">
+
+          <h2 id="About">About</h2>
+          <p>I am an energetic person and am very approachable.
+            I am a bit of a perfectionist but that makes me reliable.
+            I enjoy working with others and being part of a close-knit team. Continuous learning and personal growth are important to me.
+            </p>
+           
+            
+        </div>
+         </section>
+            </div>
+    
+        <div class="header-conten text-md-center padder">
+            <section class="section section-b">
+        <div class="container">
+          <h2 id="Education">Education</h2>
+          <p><img src="images/download.jpeg" alt="Grad-pic" class="education-section"   >
+               <h2>Nelson Mandela University</h2>
+               <h2><p> Tourism management(2014-2015)</p></h2>
+            <p>Modules: Introduction To Marketing; Introduction To Logistics; Introduction To Management; Introduction To Microeconomics</p>
+            <p>Introduction To Macroeconomics;Introduction To Macroeconomics;Communication In English A;	Business Accounting ;Introduction To Tourism </p>
+                  <p><h2>Bcom General Accounting(2016-2017)</h2></p>
+             <p>Modules: Introduction To Business Man. & Entrep;	Commercial Law;Accounting Ia; General Accounting 1b;Financial Mathematics I       </p>
+            <p>Business Statistics ;Computing Fundamentals 1;Computing Fundamentals 2  </p>
+   
+        </div>
+      </section>
+      </div>
+
+
+                      <div class="header-content text-md-center padder">
+                  <section class="section section-">
+            <div class="container">
+                  <h2 id="Skills">Skills</h2>
+                   <img src="images/azu.png" alt="Grad-pic" class="image">
+                       </div>
+                </section>
+            </div>
+
+
+
+
+        <div class="work padder">
+        <h2 class="Portfolio"  id="Portfolio">Portfolio</h2>
+        <div class="grid-container">
+          <div class="grid-item"><h6>Johncraig</h6><h6 class="mmm">HTML & CSS</h6><a href="https://kobeazukile.github.io/web-replicate/"> <img src="images/john.png" alt="Web-replicate" class="image1"></a><br></div>
+          <div class="grid-item"><h6>Joke reviewer</h6><h6 class="mmm">PHP & MYSQL</h6> <a href="https://github.com/kobeazukile/JokesReviewer"><img src="images/top.png" alt="Jokes" class="image1"></a><br> </div>
+          <div class="grid-item"><h6>Fifa quiz</h6><h6 class="mmm">PHP</h6><a href="https://github.com/kobeazukile/FifaQuiz"><img src="images/quiz.png" alt="FifaQuiz" class="image1"></a><br></div>  
+        </div>
+        </div>
+
+
+        <h2 class="contact" id="Contact">Contact</h2>
+        <section>
+          <div class="grid">
+              <div class="grid-item2"><a href="mailto:Azukilekobe11@gmail.com"><img src="images/arroba.png" alt="email" ></a><h6>Azukilekobe11@gmail.com</h6></div>
+              <div class="grid-item2"><img src="images/phone-symbol-of-an-auricular-inside-a-circle.png" alt="phone" ></a><h6>0744005045</h6></div>
+            </div>
+          </section>
+          </div>
+      
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js'></script>
+<script type='text/javascript'>
+  $(document).ready(function() {
+    $('.scrollBtn').each(function() {
+      $(this).click(function() {
+        var target = $(this).attr('target');
+        target = $(target);
+        $('body, html').animate({
+          scrollTop: target.offset().top - 110 
+        }, 1000);
+      });
+    });
+  });
+</script>
+</body>
+</html>
